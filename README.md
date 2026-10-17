@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Audio Topics (Modern Media Player)
 
-## Getting Started
+Next.js (App Router) + Tailwind CSS で構築された、カスタムUIを持つモダンなオーディオプレイヤーです。ローカルの音声ファイルとテキスト（文字起こし）ファイルを読み込み、リッチなダークモード環境で再生・閲覧できるウェブアプリケーションを目指しています。
 
-First, run the development server:
+## ✨ Features
+
+- **ローカルファイル読み込み**: PC内の音声ファイル（mp3, m4a等）とテキストファイル（.txt）をブラウザ上でセキュアに読み込み。
+- **モダンなダークUI**: Tailwind CSSを活用した、目に優しいダークモードとすりガラス（Backdrop Blur）風のデザイン。
+- **カスタムオーディオコントロール (開発中)**: ブラウザ標準の `<audio>` コントロールを廃止し、Reactの `useRef` と `useState` を用いた完全オリジナルの再生ボタン・シークバーを実装。
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Lint / Formatting**: ESLint
+- **Editor / Environment**: Neovim (ts_ls, tailwindcss-language-server), Windows 11 / WSL Ubuntu
+
+## 🚀 Getting Started
+
+手元の環境で開発サーバーを立ち上げる手順です。
 
 ```bash
+# パッケージのインストール
+npm install
+
+# 開発サーバーの起動
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
